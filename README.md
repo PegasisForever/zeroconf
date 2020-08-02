@@ -2,6 +2,9 @@
 
 Network service discovery for Flutter.
 
+Fixed `sink.success` not called on ui thread.
+
+
 ## Links
 
 * [Zero-configuration networking](https://en.wikipedia.org/wiki/Zero-configuration_networking)
