@@ -20,7 +20,13 @@ public class EventHandler implements EventChannel.StreamHandler {
     }
 
     public void onEvent(final Map<String, Object> event) {
-        sink.success(event);
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                sink.success(event);
+            }
+        });
     }
 
 }
