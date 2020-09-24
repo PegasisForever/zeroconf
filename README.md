@@ -2,6 +2,8 @@
 
 Network service discovery for Flutter.
 
+Forked from [https://pub.dev/packages/zeroconf](https://pub.dev/packages/zeroconf)
+
 Fixed `sink.success` not called on ui thread.
 
 
